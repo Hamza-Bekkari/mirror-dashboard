@@ -1,0 +1,7 @@
+<mat-grid-list *ngIf="(dataset | async) as griddata; else loading" cols="{{cols | async}}" [gutterSize]="gutterSize" [rowHeight]="rowHeight" [ngStyle]="{'margin': listMargin+'px'}">
+    <mat-grid-tile *ngFor="let data of griddata"  [colspan]="colspan" [rowspan]="rowspan">
+      <app-card [data]="data" [cardWidth]="cardWidth" [cardHeight]="cardHeight"></app-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <ng-template #loading>Dataset loading...</ng-template>
+  

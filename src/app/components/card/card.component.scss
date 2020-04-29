@@ -1,0 +1,25 @@
+:host {
+}
+
+.mat-card {
+  background: #009fe4;
+  // background-image: url("");
+  color: white;
+  padding: 0px; // override Material Design default
+}
+
+.more-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.dashboard-card-content {
+  text-align: left;
+}
+
+.image-frame {
+  background: white;
+  border: black 2px solid;
+  padding: 7px;
+}
